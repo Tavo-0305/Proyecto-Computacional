@@ -1,0 +1,15 @@
+site_name: Dinámica de partículas
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+nav:
+  - Calculation Docs: index.md
+  - tutorials.md
+  - How to guide: how_to_guide.md
+  - reference.md
+  - explanation.md
+
