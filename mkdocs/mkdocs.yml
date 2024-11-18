@@ -1,0 +1,17 @@
+# mkdocs.yml
+site_name: Dinámica Molecular
+
+  
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings
+
+
+nav:
+  - Introducción: index.md
+  - Tutorial: tutorial.md
+  - Análisis de datos: analisis_datos.md
+  - Documentación: documentation.md
+  
