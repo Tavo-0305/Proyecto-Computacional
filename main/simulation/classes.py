@@ -4,7 +4,7 @@
 En este documento creamos las clases necesarias que vamos a necesitar para correr la simulación
 La idea es llamar las clases en el main.py y correr la simulación ahí
 '''
-#Primero se importan las librerias necesarias:
+# Primero se importan las librerias necesarias:
 import os
 import numpy as np 
 import matplotlib.pyplot as plt
@@ -12,99 +12,154 @@ from datetime import datetime as dt
 from matplotlib.patches import Circle
 from matplotlib.animation import FuncAnimation
 
-#Se definen las clases:
+# Se definen las clases:
 class Disco:
-	def __init__(self,xCoord,yCoord,colorDisco,radio = 0.07):
-		self.radio = radio
-		self.posicion = np.array([xCoord,yCoord])
-		self.velocidad = np.array([np.random.uniform(-1,1), np.random.uniform(-1,1)])
-		self.figura = Circle(self.posicion,self.radio, color=colorDisco)
-		#Suponiendo que todos los discos tengan igual masa
-		self.masa = 1
+	def __init__(self,posicionX,posicionY,colorDisco,radio = 0.1):
+		self.radius = radio
+		self.position = np.array([posicionX,posicionY])
+		self.velocity = np.array([np.random.uniform(-1,1), np.random.uniform(-1,1)])
+		self.figure = Circle(self.position,self.radius, color=colorDisco)
+		self.keepVelocity = False
+		self.mass = 1 * radio
 
+	# Funcion que actualiza la posicion del disco en un paso de tiempo dt
 	def changePosition(self,dt):
-		self.posicion[0] += self.velocidad[0] * dt
-		self.posicion[1] += self.velocidad[1] * dt
-		self.figura.set_center(self.posicion)
-
+		# Actualiza los valores del numpy array de posicion
+		self.position += self.velocity * dt
+		# Actualiza la posicion de la figura en la simulacion
+		self.figure.set_center(self.position)
+	
+	# Comprueba y resuelve una colision con los limites de la caja
 	def wallCollision(self,xLimite,yLimite):
-		if self.posicion[0] - self.radio <= xLimite[0] or self.posicion[0] + self.radio >= xLimite[1]:
-			self.velocidad[0] *= -1
-		if self.posicion[1] - self.radio <= yLimite[0] or self.posicion[1] + self.radio >= yLimite[1]:
-			self.velocidad[1] *= -1
+		#Revisa la colision con los limites horizontales de la caja
+		if self.position[0] - self.radius <= xLimite[0]:
+			#Ajusta la posicion del disco e invierte la velocidad horizontal
+			self.velocity[0] *= -1
+			self.position[0] = self.radius
+			# Actualiza la posicion de la figura en la simulacion
+			self.figure.set_center(self.position)
 
-	def diskCollision(self,discoExt):
-		#Determina la distancia entre el centro de los dos discos
-		distCentros = np.linalg.norm(self.posicion - discoExt.posicion)
+		if self.position[0] + self.radius >= xLimite[1]:
+			#Ajusta la posicion del disco e invierte la velocidad horizontal
+			self.velocity[0] *= -1
+			self.position[0] = xLimite[1] - self.radius
+			# Actualiza la posicion de la figura en la simulacion
+			self.figure.set_center(self.position)
 
-		#Si esa distancia es menor o igual a la suma de los radios, estan colisionando
-		if distCentros <= self.radio + discoExt.radio:
+		#Revisa la colision con los limites verticales de la caja
+		if self.position[1] - self.radius <= yLimite[0]:
+			#Ajusta la posicion del disco e invierte la velocidad horizontal
+			self.velocity[1] *= -1
+			self.position[1] = self.radius
+			# Actualiza la posicion de la figura en la simulacion
+			self.figure.set_center(self.position)
+			
+		if self.position[1] + self.radius >= yLimite[1]:
+			#Ajusta la posicion del disco e invierte la velocidad horizontal
+			self.velocity[1] *= -1
+			self.position[1] = yLimite[1] - self.radius
+			# Actualiza la posicion de la figura en la simulacion
+			self.figure.set_center(self.position)
+
+	# Comprueba y resuelve una colision con otro disco
+	def diskCollision(self,otherD):
+		# Determina la distancia entre el centro de los dos discos
+		distance = np.linalg.norm(self.position - otherD.position)
+
+		#Si la distancia es menor o igual a la suma de los radios, estan colisionando
+		if distance <= self.radius + otherD.radius:
+			#Obtiene la distancia de superposicion entre los discos
+			overlap = self.radius + otherD.radius - distance
+
+			#Obtiene el vector unitario que contiene los valores de superposicion
+			overlapVector = overlap * (self.position - otherD.position) / distance
+
+			#Ajusta las posiciones de los discos para evitar la superposicion
+			self.position +=  overlapVector
+			otherD.position -= overlapVector
+
+			#Actualiza las posiciones en la simulacion
+			self.figure.set_center(self.position)
+			otherD.figure.set_center(otherD.position)
+
 			#Para el disco "self"
-			masaRelacion = 2 * discoExt.masa / (self.masa + discoExt.masa)
-			difPos = discoExt.posicion - self.posicion
-			difVel = discoExt.velocidad - self.velocidad
-			self.velocidad += (masaRelacion * np.dot(difVel,difPos) / np.dot(difPos,difPos)) * difPos
+			massRelation = 2 * otherD.mass / (self.mass + otherD.mass)
+			difPos = otherD.position - self.position
+			difVel = otherD.velocity - self.velocity
+			self.velocity += (massRelation * np.dot(difVel,difPos) / np.dot(difPos,difPos)) * difPos
 
-			#Para el disco externo
-			masaRelacion = 2 * self.masa / (self.masa + discoExt.masa)
+			#Para el disco "otherD"
+			massRelation = 2 * self.mass / (self.mass + otherD.mass)
 			difPos *= -1
 			difVel *= -1
-			discoExt.velocidad += (masaRelacion * np.dot(difVel,difPos) / np.dot(difPos,difPos)) * difPos
+			otherD.velocity += (massRelation * np.dot(difVel,difPos) / np.dot(difPos,difPos)) * difPos
 
 class Escenario:
-	def __init__(self, discos, anchoEscenario = 1, largoEscenario = 1):
-		self.discos = discos
+	def __init__(self, discos,dt = 0.01, anchoEscenario = 1, largoEscenario = 1):
+		self.dList = discos
+		self.walls = [[0, anchoEscenario], [0, largoEscenario]]
 		self.yLimite = [0, largoEscenario]
 		self.xLimite = [0, anchoEscenario]
-		self.espacio = self.setSpace()
-		self.step = 0.01
-		self.time = 0
+		self.screen = self.setScreen()
+		self.step = dt
 		self.fileName = self.initFile()
 		
-	def setSpace(self):
+	def setScreen(self):
 		fig, ax = plt.subplots(figsize=(8, 8))
-		ax.set_xlim(0, 1)
-		ax.set_ylim(0, 1)
+		ax.set_xlim(self.walls[0])
+		ax.set_ylim(self.walls[1])
 		ax.set_aspect('equal')
-		ax.set_xticks([0,1])
-		ax.set_yticks([0,1])
-		ax.set_facecolor('whitesmoke')  
+		ax.set_xticks(self.walls[0])
+		ax.set_yticks(self.walls[1])
+		ax.set_facecolor("#ADD8E6")  
 		ax.set_title("Simulacion de la dinamica molecular de discos solidos", fontsize=12, fontweight='bold')
-		for d in self.discos:
-			ax.add_patch(d.figura)
+		# Agregar un contador en pantalla
+		timer = ax.text(0.05, 0.95, "Tiempo: 0.00 s", transform=ax.transAxes, fontsize=12, color="black", ha="left")
+		energy = ax.text(0.05, 0.90, "Energia: 0.00 J", transform=ax.transAxes, fontsize=12, color="black", ha="left")
+		for d in self.dList:
+			ax.add_patch(d.figure)
 
-		return [fig, ax]
+		return [fig, ax, timer, energy]
 
 	def framing(self,frame):
 		#Linea de datos de los discos en el tiempo T
-		datos = f"{self.time}"
+		datos = f"{self.step * frame}"
+		
+		energy = 0
 
 		#Para cada disco
-		for d in self.discos:
+		for d in self.dList:
 			#Actualiza su posicion al siguiente step
 			d.changePosition(self.step)
 
 			#Agrega la posicion X a la linea de datos
-			datos += f",{d.posicion[0]},{d.posicion[1]},{d.velocidad[0]},{d.velocidad[1]}"
+			datos += f",{d.position[0]},{d.position[1]},{d.velocity[0]},{d.velocity[1]}"
 			
 			#Comprueba colisiones con las paredes
 			d.wallCollision(self.xLimite,self.yLimite)
-		
+
+			#Suma la energia
+			energy += d.mass * np.linalg.norm(d.velocity) ** 2
+
+		#Agrega los datos de los discos al archivo
 		self.updateFile(f"{datos}\n")
 
+		#Ciclo que comprueba las colisiones entre discos
 		contador = 0
-		while contador < len(self.discos):
-			for i in range(contador + 1,len(self.discos)):
-				self.discos[contador].diskCollision(self.discos[i])
+		while contador < len(self.dList):
+			for i in range(contador + 1,len(self.dList)):
+				self.dList[contador].diskCollision(self.dList[i])
 			contador += 1
-
-		self.time += self.step
 		
-		return [d.figura for d in self.discos] 
+		#Actualiza el timer en pantalla
+		self.screen[2].set_text(f"Tiempo: {self.step * frame:.2f} s")
+		self.screen[3].set_text(f"Energia: {energy:.2f} J")
+		
+		return [d.figure for d in self.dList]  + [self.screen[2]] + [self.screen[3]] 
 
 	def runSimulation(self):
 		#Ejecuta la simulacion
-		simulacion = FuncAnimation(self.espacio[0],self.framing,frames=range(100), blit=True, interval=10)
+		simulacion = FuncAnimation(self.screen[0],self.framing, blit=True, interval=20, cache_frame_data=False)
 		plt.show()
 
 	def initFile(self):
@@ -114,7 +169,7 @@ class Escenario:
 
 		#Genera el titular que va en la primera linea del archivo
 		titular = "T"
-		for i in range(1,len(self.discos) + 1):
+		for i in range(1,len(self.dList) + 1):
 			titular += f",X_{i},Y_{i},Vx_{i},Vy_{i}"
 		titular += "\n"
 		
