@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 
-'''
-En este documento creamos las clases necesarias que vamos a necesitar para correr la simulación
-La idea es llamar las clases en el main.py y correr la simulación ahí
-'''
-# Primero se importan las librerias necesarias:
+"""
+Simulación de colisiones entre discos sólidos en 2D.
+
+Este módulo permite realizar simulaciones de colisiones elásticas entre discos dentro 
+de un contenedor cerrado. Incluye visualización interactiva en tiempo real y exportación
+de datos a un archivo CSV.
+
+Clases principales:
+- `Disco`: Representa un disco con posición, velocidad y radio.
+- `Escenario`: Define el espacio de simulación y administra las interacciones entre los discos y las paredes.
+"""
+
+# Se importan librerías necesarias
 import os
 import numpy as np 
 import matplotlib.pyplot as plt
@@ -12,9 +20,28 @@ from datetime import datetime as dt
 from matplotlib.patches import Circle
 from matplotlib.animation import FuncAnimation
 
-# Se definen las clases:
 class Disco:
+	"""
+    Representa un disco sólido en la simulación.
+
+    Atributos:
+        radius (float): Radio del disco.
+        position (numpy.ndarray): Posición del disco como un array [x, y].
+        velocity (numpy.ndarray): Velocidad del disco como un array [vx, vy].
+        figure (matplotlib.patches.Circle): Representación gráfica del disco.
+        keepVelocity (bool): Si es True, conserva la velocidad durante las colisiones.
+        mass (float): Masa del disco, calculada proporcionalmente al radio.
+    """
 	def __init__(self,posicionX,posicionY,colorDisco,radio = 0.1):
+		"""
+        Inicializa un disco en la simulación.
+
+        Args:
+            posicionX (float): Coordenada X inicial del disco.
+            posicionY (float): Coordenada Y inicial del disco.
+            colorDisco (str): Color del disco para la visualización.
+            radio (float, opcional): Radio del disco. Por defecto es 0.1.
+        """
 		self.radius = radio
 		self.position = np.array([posicionX,posicionY])
 		self.velocity = np.array([np.random.uniform(-1,1), np.random.uniform(-1,1)])
@@ -22,48 +49,51 @@ class Disco:
 		self.keepVelocity = False
 		self.mass = 1 * radio
 
-	# Funcion que actualiza la posicion del disco en un paso de tiempo dt
 	def changePosition(self,dt):
-		# Actualiza los valores del numpy array de posicion
+		"""
+        Actualiza la posición del disco basado en su velocidad.
+
+        Args:
+            dt (float): Paso de tiempo.
+        """
 		self.position += self.velocity * dt
-		# Actualiza la posicion de la figura en la simulacion
 		self.figure.set_center(self.position)
 	
-	# Comprueba y resuelve una colision con los limites de la caja
 	def wallCollision(self,xLimite,yLimite):
-		#Revisa la colision con los limites horizontales de la caja
+		"""
+        Detecta y resuelve colisiones con las paredes del contenedor.
+
+        Args:
+            xLimite (list): Límites en el eje X [x_min, x_max].
+            yLimite (list): Límites en el eje Y [y_min, y_max].
+        """
+		# Colisión con los límites horizontales
 		if self.position[0] - self.radius <= xLimite[0]:
-			#Ajusta la posicion del disco e invierte la velocidad horizontal
 			self.velocity[0] *= -1
 			self.position[0] = self.radius
-			# Actualiza la posicion de la figura en la simulacion
 			self.figure.set_center(self.position)
-
 		if self.position[0] + self.radius >= xLimite[1]:
-			#Ajusta la posicion del disco e invierte la velocidad horizontal
 			self.velocity[0] *= -1
 			self.position[0] = xLimite[1] - self.radius
-			# Actualiza la posicion de la figura en la simulacion
 			self.figure.set_center(self.position)
 
-		#Revisa la colision con los limites verticales de la caja
+		 # Colisión con los límites verticales
 		if self.position[1] - self.radius <= yLimite[0]:
-			#Ajusta la posicion del disco e invierte la velocidad horizontal
 			self.velocity[1] *= -1
 			self.position[1] = self.radius
-			# Actualiza la posicion de la figura en la simulacion
 			self.figure.set_center(self.position)
-			
 		if self.position[1] + self.radius >= yLimite[1]:
-			#Ajusta la posicion del disco e invierte la velocidad horizontal
 			self.velocity[1] *= -1
 			self.position[1] = yLimite[1] - self.radius
-			# Actualiza la posicion de la figura en la simulacion
 			self.figure.set_center(self.position)
 
-	# Comprueba y resuelve una colision con otro disco
 	def diskCollision(self,otherD):
-		# Determina la distancia entre el centro de los dos discos
+		"""
+        Detecta y resuelve colisiones elásticas con otro disco.
+
+        Args:
+            otherD (Disco): Otro objeto de tipo `Disco`.
+        """
 		distance = np.linalg.norm(self.position - otherD.position)
 
 		#Si la distancia es menor o igual a la suma de los radios, estan colisionando
@@ -95,92 +125,110 @@ class Disco:
 			otherD.velocity += (massRelation * np.dot(difVel,difPos) / np.dot(difPos,difPos)) * difPos
 
 class Escenario:
-	def __init__(self, discos,dt = 0.01, anchoEscenario = 1, largoEscenario = 1):
-		self.dList = discos
-		self.walls = [[0, anchoEscenario], [0, largoEscenario]]
-		self.yLimite = [0, largoEscenario]
-		self.xLimite = [0, anchoEscenario]
-		self.screen = self.setScreen()
-		self.step = dt
-		self.fileName = self.initFile()
-		
-	def setScreen(self):
-		fig, ax = plt.subplots(figsize=(8, 8))
-		ax.set_xlim(self.walls[0])
-		ax.set_ylim(self.walls[1])
-		ax.set_aspect('equal')
-		ax.set_xticks(self.walls[0])
-		ax.set_yticks(self.walls[1])
-		ax.set_facecolor("#ADD8E6")  
-		ax.set_title("Simulacion de la dinamica molecular de discos solidos", fontsize=12, fontweight='bold')
-		# Agregar un contador en pantalla
-		timer = ax.text(0.05, 0.95, "Tiempo: 0.00 s", transform=ax.transAxes, fontsize=12, color="black", ha="left")
-		energy = ax.text(0.05, 0.90, "Energia: 0.00 J", transform=ax.transAxes, fontsize=12, color="black", ha="left")
-		for d in self.dList:
-			ax.add_patch(d.figure)
+    """
+    Administra el espacio de simulación y las interacciones entre discos.
 
-		return [fig, ax, timer, energy]
+    Atributos:
+        dList (list): Lista de objetos `Disco` en la simulación.
+        walls (list): Límites del escenario en formato [[x_min, x_max], [y_min, y_max]].
+        xLimite (list): Límites en el eje X.
+        yLimite (list): Límites en el eje Y.
+        screen (list): Elementos gráficos de `matplotlib` para la visualización.
+        step (float): Paso de tiempo para cada actualización.
+        fileName (str): Nombre del archivo CSV donde se guardan los datos.
+    """
+    def __init__(self, discos, dt=0.01, anchoEscenario=1, largoEscenario=1):
+        """
+        Inicializa un nuevo escenario para la simulación.
 
-	def framing(self,frame):
-		#Linea de datos de los discos en el tiempo T
-		datos = f"{self.step * frame}"
-		
-		energy = 0
+        Args:
+            discos (list): Lista de objetos `Disco`.
+            dt (float, opcional): Paso de tiempo para cada actualización. Por defecto es 0.01.
+            anchoEscenario (float, opcional): Ancho del contenedor. Por defecto es 1.
+            largoEscenario (float, opcional): Largo del contenedor. Por defecto es 1.
+        """
+        self.dList = discos
+        self.walls = [[0, anchoEscenario], [0, largoEscenario]]
+        self.xLimite = [0, anchoEscenario]
+        self.yLimite = [0, largoEscenario]
+        self.screen = self.setScreen()
+        self.step = dt
+        self.fileName = self.initFile()
 
-		#Para cada disco
-		for d in self.dList:
-			#Actualiza su posicion al siguiente step
-			d.changePosition(self.step)
+    def setScreen(self):
+        """
+        Configura la visualización gráfica del escenario con `matplotlib`.
 
-			#Agrega la posicion X a la linea de datos
-			datos += f",{d.position[0]},{d.position[1]},{d.velocity[0]},{d.velocity[1]}"
-			
-			#Comprueba colisiones con las paredes
-			d.wallCollision(self.xLimite,self.yLimite)
+        Returns:
+            list: Elementos de la figura y ejes para la animación.
+        """
+        fig, ax = plt.subplots(figsize=(8, 8))
+        ax.set_xlim(self.walls[0])
+        ax.set_ylim(self.walls[1])
+        ax.set_aspect('equal')
+        ax.set_facecolor("#ADD8E6")
+        timer = ax.text(0.05, 0.95, "Tiempo: 0.00 s", transform=ax.transAxes)
+        energy = ax.text(0.05, 0.90, "Energía: 0.00 J", transform=ax.transAxes)
+        for d in self.dList:
+            ax.add_patch(d.figure)
+        return [fig, ax, timer, energy]
 
-			#Suma la energia
-			energy += d.mass * np.linalg.norm(d.velocity) ** 2
+    def framing(self, frame):
+        """
+        Actualiza la posición y estado de los discos para cada cuadro de la simulación.
 
-		#Agrega los datos de los discos al archivo
-		self.updateFile(f"{datos}\n")
+        Args:
+            frame (int): Número de cuadro actual en la simulación.
 
-		#Ciclo que comprueba las colisiones entre discos
-		contador = 0
-		while contador < len(self.dList):
-			for i in range(contador + 1,len(self.dList)):
-				self.dList[contador].diskCollision(self.dList[i])
-			contador += 1
-		
-		#Actualiza el timer en pantalla
-		self.screen[2].set_text(f"Tiempo: {self.step * frame:.2f} s")
-		self.screen[3].set_text(f"Energia: {energy:.2f} J")
-		
-		return [d.figure for d in self.dList]  + [self.screen[2]] + [self.screen[3]] 
+        Returns:
+            list: Elementos gráficos actualizados para el cuadro.
+        """
+        datos = f"{self.step * frame}"
+        energy = 0
 
-	def runSimulation(self):
-		#Ejecuta la simulacion
-		simulacion = FuncAnimation(self.screen[0],self.framing, blit=True, interval=20, cache_frame_data=False)
-		plt.show()
+        for d in self.dList:
+            d.changePosition(self.step)
+            datos += f",{d.position[0]},{d.position[1]},{d.velocity[0]},{d.velocity[1]}"
+            d.wallCollision(self.xLimite, self.yLimite)
+            energy += d.mass * np.linalg.norm(d.velocity) ** 2
 
-	def initFile(self):
-		#Genera la ruta con el nombre del archivo
-		#fileName = os.path.join(f"Simulacion {dt.now().strftime('%Y%m%d-%H%M')}.csv")
-		fileName = "Datos_Simulacion.csv"
+        self.updateFile(f"{datos}\n")
+        for i, disco in enumerate(self.dList):
+            for other in self.dList[i + 1 :]:
+                disco.diskCollision(other)
 
-		#Genera el titular que va en la primera linea del archivo
-		titular = "T"
-		for i in range(1,len(self.dList) + 1):
-			titular += f",X_{i},Y_{i},Vx_{i},Vy_{i}"
-		titular += "\n"
-		
-		#Crea el archivo y le agrega el titular
-		with open(fileName,"w") as file:
-			file.write(titular)
-		
-		#Retorna el nombre del archivo
-		return fileName
+        self.screen[2].set_text(f"Tiempo: {self.step * frame:.2f} s")
+        self.screen[3].set_text(f"Energía: {energy:.2f} J")
+        return [d.figure for d in self.dList] + [self.screen[2], self.screen[3]]
 
-	def updateFile(self,datos):
-		#Este método se encarga de generar un archivo .csv que guarde los datos de posición, velocidad y tiempos para realizar un pequeño análisis de datos del comportamiento de las colisiones
-		with open(self.fileName,"a") as file:
-			file.write(datos)
+    def runSimulation(self):
+        """
+        Ejecuta la simulación y muestra la animación en pantalla.
+        """
+        simulation = FuncAnimation(self.screen[0], self.framing, blit=True, interval=20, cache_frame_data=False)
+        plt.show()
+
+    def initFile(self):
+        """
+        Inicializa el archivo CSV para guardar los datos de la simulación.
+
+        Returns:
+            str: Nombre del archivo CSV creado.
+        """
+        fileName = "Datos_Simulacion.csv"
+        header = "T"
+        for i in range(1, len(self.dList) + 1):
+            header += f",X_{i},Y_{i},Vx_{i},Vy_{i}"
+        with open(fileName, "w") as f:
+            f.write(header + "\n")
+        return fileName
+
+    def updateFile(self, data):
+        """
+        Escribe una línea de datos en el archivo CSV.
+
+        Args:
+            data (str): Datos a escribir.
+        """
+        with open(self.fileName, "a") as f:
+            f.write(data)
