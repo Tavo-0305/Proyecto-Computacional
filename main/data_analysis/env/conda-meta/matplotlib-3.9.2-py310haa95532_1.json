@@ -1,0 +1,36 @@
+{
+  "build": "py310haa95532_1",
+  "build_number": 1,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.10,<3.11.0a0",
+    "tornado >=5",
+    "pyqt >=5",
+    "matplotlib-base >=3.9.2,<3.9.3.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\gusno\\miniconda3\\pkgs\\matplotlib-3.9.2-py310haa95532_1",
+  "files": [
+    ".nonadmin"
+  ],
+  "fn": "matplotlib-3.9.2-py310haa95532_1.conda",
+  "license": "LicenseRef-PSF-based",
+  "link": {
+    "source": "C:\\Users\\gusno\\miniconda3\\pkgs\\matplotlib-3.9.2-py310haa95532_1",
+    "type": 1
+  },
+  "md5": "6abc0f449a4794dbe50035d2633ee67d",
+  "name": "matplotlib",
+  "package_tarball_full_path": "C:\\Users\\gusno\\miniconda3\\pkgs\\matplotlib-3.9.2-py310haa95532_1.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "matplotlib",
+  "sha256": "dda489764563677f2ef2cb81604cd9601b49b2767fd2f7691e75ac6cfec1b367",
+  "size": 7834,
+  "subdir": "win-64",
+  "timestamp": 1732551308000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/matplotlib-3.9.2-py310haa95532_1.conda",
+  "version": "3.9.2"
+}

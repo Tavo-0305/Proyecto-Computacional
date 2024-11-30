@@ -1,0 +1,514 @@
+{
+  "build": "py310haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.10,<3.11.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\gusno\\miniconda3\\pkgs\\prometheus_client-0.21.0-py310haa95532_0",
+  "files": [
+    "Lib/site-packages/prometheus_client-0.21.0.dist-info/INSTALLER",
+    "Lib/site-packages/prometheus_client-0.21.0.dist-info/LICENSE",
+    "Lib/site-packages/prometheus_client-0.21.0.dist-info/METADATA",
+    "Lib/site-packages/prometheus_client-0.21.0.dist-info/NOTICE",
+    "Lib/site-packages/prometheus_client-0.21.0.dist-info/RECORD",
+    "Lib/site-packages/prometheus_client-0.21.0.dist-info/REQUESTED",
+    "Lib/site-packages/prometheus_client-0.21.0.dist-info/WHEEL",
+    "Lib/site-packages/prometheus_client-0.21.0.dist-info/direct_url.json",
+    "Lib/site-packages/prometheus_client-0.21.0.dist-info/top_level.txt",
+    "Lib/site-packages/prometheus_client/__init__.py",
+    "Lib/site-packages/prometheus_client/__pycache__/__init__.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/asgi.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/context_managers.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/core.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/decorator.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/exposition.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/gc_collector.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/metrics.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/metrics_core.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/mmap_dict.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/multiprocess.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/parser.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/platform_collector.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/process_collector.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/registry.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/samples.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/utils.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/__pycache__/values.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/asgi.py",
+    "Lib/site-packages/prometheus_client/bridge/__init__.py",
+    "Lib/site-packages/prometheus_client/bridge/__pycache__/__init__.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/bridge/__pycache__/graphite.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/bridge/graphite.py",
+    "Lib/site-packages/prometheus_client/context_managers.py",
+    "Lib/site-packages/prometheus_client/core.py",
+    "Lib/site-packages/prometheus_client/decorator.py",
+    "Lib/site-packages/prometheus_client/exposition.py",
+    "Lib/site-packages/prometheus_client/gc_collector.py",
+    "Lib/site-packages/prometheus_client/metrics.py",
+    "Lib/site-packages/prometheus_client/metrics_core.py",
+    "Lib/site-packages/prometheus_client/mmap_dict.py",
+    "Lib/site-packages/prometheus_client/multiprocess.py",
+    "Lib/site-packages/prometheus_client/openmetrics/__init__.py",
+    "Lib/site-packages/prometheus_client/openmetrics/__pycache__/__init__.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/openmetrics/__pycache__/exposition.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/openmetrics/__pycache__/parser.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/openmetrics/exposition.py",
+    "Lib/site-packages/prometheus_client/openmetrics/parser.py",
+    "Lib/site-packages/prometheus_client/parser.py",
+    "Lib/site-packages/prometheus_client/platform_collector.py",
+    "Lib/site-packages/prometheus_client/process_collector.py",
+    "Lib/site-packages/prometheus_client/py.typed",
+    "Lib/site-packages/prometheus_client/registry.py",
+    "Lib/site-packages/prometheus_client/samples.py",
+    "Lib/site-packages/prometheus_client/twisted/__init__.py",
+    "Lib/site-packages/prometheus_client/twisted/__pycache__/__init__.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/twisted/__pycache__/_exposition.cpython-310.pyc",
+    "Lib/site-packages/prometheus_client/twisted/_exposition.py",
+    "Lib/site-packages/prometheus_client/utils.py",
+    "Lib/site-packages/prometheus_client/values.py",
+    ".nonadmin"
+  ],
+  "fn": "prometheus_client-0.21.0-py310haa95532_0.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "C:\\Users\\gusno\\miniconda3\\pkgs\\prometheus_client-0.21.0-py310haa95532_0",
+    "type": 1
+  },
+  "md5": "3bfe8da4c60cadd8e81f2bac233bb50a",
+  "name": "prometheus_client",
+  "package_tarball_full_path": "C:\\Users\\gusno\\miniconda3\\pkgs\\prometheus_client-0.21.0-py310haa95532_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/prometheus_client-0.21.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client-0.21.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "sha256_in_prefix": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "size_in_bytes": 11357
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client-0.21.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "8fd2541e27a21fc6caef0c5972a53bb1fc737623e6a5edc4fba671d246dc651c",
+        "sha256_in_prefix": "8fd2541e27a21fc6caef0c5972a53bb1fc737623e6a5edc4fba671d246dc651c",
+        "size_in_bytes": 1893
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client-0.21.0.dist-info/NOTICE",
+        "path_type": "hardlink",
+        "sha256": "4efa1874aeaa60f365f5797e617f1ff933e15e508eaf751e9848ed4413d7a7ae",
+        "sha256_in_prefix": "4efa1874aeaa60f365f5797e617f1ff933e15e508eaf751e9848ed4413d7a7ae",
+        "size_in_bytes": 236
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client-0.21.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "bc8104fd5039dc34ecc3300a704c7dea6fc1ad6f11712f1525a09b6f5ed95484",
+        "sha256_in_prefix": "bc8104fd5039dc34ecc3300a704c7dea6fc1ad6f11712f1525a09b6f5ed95484",
+        "size_in_bytes": 4739
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client-0.21.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client-0.21.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "195f5a3138703ffe28342b6f102d9e737a9462eb6059e033925ae8ff49b85894",
+        "sha256_in_prefix": "195f5a3138703ffe28342b6f102d9e737a9462eb6059e033925ae8ff49b85894",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client-0.21.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "1de1e2746dfbd23724bf7b99f3a1ac88301f7768c8ccf4b664d2d7c61d2185d3",
+        "sha256_in_prefix": "1de1e2746dfbd23724bf7b99f3a1ac88301f7768c8ccf4b664d2d7c61d2185d3",
+        "size_in_bytes": 97
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client-0.21.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "0312c4bc710c8535be2af6fd2f2d433c8dda6a98a043669e83c4d732df56311a",
+        "sha256_in_prefix": "0312c4bc710c8535be2af6fd2f2d433c8dda6a98a043669e83c4d732df56311a",
+        "size_in_bytes": 18
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0fea6d9509163d7a992093e2e5347440d31d5abfc48effa032ae960058a4ffda",
+        "sha256_in_prefix": "0fea6d9509163d7a992093e2e5347440d31d5abfc48effa032ae960058a4ffda",
+        "size_in_bytes": 1815
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "47ba1bfc1f3f34398916789dc844de5a0f91e8dbb761b21fb7090e143c9b5786",
+        "sha256_in_prefix": "47ba1bfc1f3f34398916789dc844de5a0f91e8dbb761b21fb7090e143c9b5786",
+        "size_in_bytes": 1614
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/asgi.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "63a528aefc59c44b0c3695fa00e2e09d33b32812b2692ae2b581fe3a727f08b4",
+        "sha256_in_prefix": "63a528aefc59c44b0c3695fa00e2e09d33b32812b2692ae2b581fe3a727f08b4",
+        "size_in_bytes": 1820
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/context_managers.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "bf04dbbb5cffe2f768fd498df81e0025de6769dfbf383709c30618c0e3e73808",
+        "sha256_in_prefix": "bf04dbbb5cffe2f768fd498df81e0025de6769dfbf383709c30618c0e3e73808",
+        "size_in_bytes": 3824
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/core.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "5f8548804ad60e63c288f1d7833b37226692b3b3fd46e5aad9a97deabc715867",
+        "sha256_in_prefix": "5f8548804ad60e63c288f1d7833b37226692b3b3fd46e5aad9a97deabc715867",
+        "size_in_bytes": 845
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/decorator.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "d786c9076d9d27ea2fd5ef02429ce859c6809be5149f324e207a9bab1510483e",
+        "sha256_in_prefix": "d786c9076d9d27ea2fd5ef02429ce859c6809be5149f324e207a9bab1510483e",
+        "size_in_bytes": 12181
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/exposition.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "e21de35a698bc400b9a40aca1778c4891ac5bec01a151c552cf92901de66b1f8",
+        "sha256_in_prefix": "e21de35a698bc400b9a40aca1778c4891ac5bec01a151c552cf92901de66b1f8",
+        "size_in_bytes": 22358
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/gc_collector.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "80657ae4c624bc0199fca0653b6fd832e53d22ef7b6adb37073059f52a9009f3",
+        "sha256_in_prefix": "80657ae4c624bc0199fca0653b6fd832e53d22ef7b6adb37073059f52a9009f3",
+        "size_in_bytes": 1564
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/metrics.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "2e9d3d2b605eab686441d5e57337698fccda79e1acad306f01456d6ca5c2ce6d",
+        "sha256_in_prefix": "2e9d3d2b605eab686441d5e57337698fccda79e1acad306f01456d6ca5c2ce6d",
+        "size_in_bytes": 26725
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/metrics_core.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "e3a2f96e6891b96bb7b786ec8794c38dad00e350d6d88f8ad3e257f71dbb2a31",
+        "sha256_in_prefix": "e3a2f96e6891b96bb7b786ec8794c38dad00e350d6d88f8ad3e257f71dbb2a31",
+        "size_in_bytes": 12547
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/mmap_dict.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "557ef9f9c1fec38cd5771ad4532ae1884f2ae21423f60aab3c2976d05dddd9f5",
+        "sha256_in_prefix": "557ef9f9c1fec38cd5771ad4532ae1884f2ae21423f60aab3c2976d05dddd9f5",
+        "size_in_bytes": 4880
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/multiprocess.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "5575d2e8068d204acf0d5eec7818da80a73970f3381b2f22cb289f2cb1be5176",
+        "sha256_in_prefix": "5575d2e8068d204acf0d5eec7818da80a73970f3381b2f22cb289f2cb1be5176",
+        "size_in_bytes": 5542
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/parser.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "667dde458deaba20da041e04bf078f46046c3d03fe759782ce53b76b41b31306",
+        "sha256_in_prefix": "667dde458deaba20da041e04bf078f46046c3d03fe759782ce53b76b41b31306",
+        "size_in_bytes": 5020
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/platform_collector.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "a995897873d8923e37aed25c72a2c831732f8ecff6747b9c4e02b38f3cf4d26e",
+        "sha256_in_prefix": "a995897873d8923e37aed25c72a2c831732f8ecff6747b9c4e02b38f3cf4d26e",
+        "size_in_bytes": 2314
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/process_collector.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "ae85156fb9432514909da47fc15dada30194c59e51f3a6c2bd242694965b2c64",
+        "sha256_in_prefix": "ae85156fb9432514909da47fc15dada30194c59e51f3a6c2bd242694965b2c64",
+        "size_in_bytes": 3380
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/registry.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "5066fddd0adcd0d202cf03e9cd2d1c7b6089d387ac2e8dd8f56ae1f1b034e1ac",
+        "sha256_in_prefix": "5066fddd0adcd0d202cf03e9cd2d1c7b6089d387ac2e8dd8f56ae1f1b034e1ac",
+        "size_in_bytes": 6176
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/samples.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "7e985b32d4db20b08dba1b675eaedc642ab54de7ebfab995cfe418f6b6c1fcc5",
+        "sha256_in_prefix": "7e985b32d4db20b08dba1b675eaedc642ab54de7ebfab995cfe418f6b6c1fcc5",
+        "size_in_bytes": 2471
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/utils.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "608a0daeb4bfbdf23764998b51da7432801d590f49bee9dbf7c3dc08ef245f52",
+        "sha256_in_prefix": "608a0daeb4bfbdf23764998b51da7432801d590f49bee9dbf7c3dc08ef245f52",
+        "size_in_bytes": 613
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/__pycache__/values.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "7f11731f0acf6bea3556c4834c84bbf8c04b68472dfeb1676d3d1807f0583991",
+        "sha256_in_prefix": "7f11731f0acf6bea3556c4834c84bbf8c04b68472dfeb1676d3d1807f0583991",
+        "size_in_bytes": 5065
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/asgi.py",
+        "path_type": "hardlink",
+        "sha256": "8af9fe795ed95340446b813da160456c14549251cfc3d7f995c746b3216e08ba",
+        "sha256_in_prefix": "8af9fe795ed95340446b813da160456c14549251cfc3d7f995c746b3216e08ba",
+        "size_in_bytes": 1606
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/bridge/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/bridge/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "47b8e34c1ad16b88e3b075a9960287d505d43dadeaf5dc03a389c3b9b23e213e",
+        "sha256_in_prefix": "47b8e34c1ad16b88e3b075a9960287d505d43dadeaf5dc03a389c3b9b23e213e",
+        "size_in_bytes": 147
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/bridge/__pycache__/graphite.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "e7c7f70a63180cfba8e25e671c6e071ba78cd492930799c83321229603847b8b",
+        "sha256_in_prefix": "e7c7f70a63180cfba8e25e671c6e071ba78cd492930799c83321229603847b8b",
+        "size_in_bytes": 3005
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/bridge/graphite.py",
+        "path_type": "hardlink",
+        "sha256": "9b9fbb23257218bf02e92f722f17aea52d697e3f0a14d3cd95acdd75a9904fcb",
+        "sha256_in_prefix": "9b9fbb23257218bf02e92f722f17aea52d697e3f0a14d3cd95acdd75a9904fcb",
+        "size_in_bytes": 2897
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/context_managers.py",
+        "path_type": "hardlink",
+        "sha256": "13bba4b27e03ef20686560e08c8d55469477976b4a8afb3d0c76795007263f01",
+        "sha256_in_prefix": "13bba4b27e03ef20686560e08c8d55469477976b4a8afb3d0c76795007263f01",
+        "size_in_bytes": 2343
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/core.py",
+        "path_type": "hardlink",
+        "sha256": "cb256f4b16bc5909c1bc0af82613b71ea753a8297085bce6546bf046f590308a",
+        "sha256_in_prefix": "cb256f4b16bc5909c1bc0af82613b71ea753a8297085bce6546bf046f590308a",
+        "size_in_bytes": 860
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/decorator.py",
+        "path_type": "hardlink",
+        "sha256": "ecc754a245a6cd0d7b7e87add91e5070cb9b759d560cf198a34fc7a8bc40c369",
+        "sha256_in_prefix": "ecc754a245a6cd0d7b7e87add91e5070cb9b759d560cf198a34fc7a8bc40c369",
+        "size_in_bytes": 15802
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/exposition.py",
+        "path_type": "hardlink",
+        "sha256": "9e6bac84de8d206a3e9ce05e6825df8396c27b2bdeb1533f0d75169918c5c2be",
+        "sha256_in_prefix": "9e6bac84de8d206a3e9ce05e6825df8396c27b2bdeb1533f0d75169918c5c2be",
+        "size_in_bytes": 26176
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/gc_collector.py",
+        "path_type": "hardlink",
+        "sha256": "b418575e4b45f60f61ee0bcef83988da0c4fa25dbf81723533a7bd64c6b335f6",
+        "sha256_in_prefix": "b418575e4b45f60f61ee0bcef83988da0c4fa25dbf81723533a7bd64c6b335f6",
+        "size_in_bytes": 1514
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/metrics.py",
+        "path_type": "hardlink",
+        "sha256": "d57ea8e448a0788a17fa3172f2bdb985aa0efaf77c235f33bd495bedf34bac5c",
+        "sha256_in_prefix": "d57ea8e448a0788a17fa3172f2bdb985aa0efaf77c235f33bd495bedf34bac5c",
+        "size_in_bytes": 28113
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/metrics_core.py",
+        "path_type": "hardlink",
+        "sha256": "633fb2a92de9c4d769211312850bff20768a9554bf439dd369870ff54f0b0e51",
+        "sha256_in_prefix": "633fb2a92de9c4d769211312850bff20768a9554bf439dd369870ff54f0b0e51",
+        "size_in_bytes": 15548
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/mmap_dict.py",
+        "path_type": "hardlink",
+        "sha256": "fade3d932c191c51e4d83f485adba7a8a16daf978482237e463156835e8913e4",
+        "sha256_in_prefix": "fade3d932c191c51e4d83f485adba7a8a16daf978482237e463156835e8913e4",
+        "size_in_bytes": 5393
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/multiprocess.py",
+        "path_type": "hardlink",
+        "sha256": "548bc0474be68cbd259279d38a32adf474b50cdcfdad9ad2d3d1ea20871a64bb",
+        "sha256_in_prefix": "548bc0474be68cbd259279d38a32adf474b50cdcfdad9ad2d3d1ea20871a64bb",
+        "size_in_bytes": 7539
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/openmetrics/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/openmetrics/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "63b41e5df0f52e1c573aaa8aaa3978992fcceb65e199d4442b75ac753ed5a27e",
+        "sha256_in_prefix": "63b41e5df0f52e1c573aaa8aaa3978992fcceb65e199d4442b75ac753ed5a27e",
+        "size_in_bytes": 152
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/openmetrics/__pycache__/exposition.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "ea9fd791c9621ebd4f13f9ee6707a198276b63c5d2ae1a1265619bf62a83e99c",
+        "sha256_in_prefix": "ea9fd791c9621ebd4f13f9ee6707a198276b63c5d2ae1a1265619bf62a83e99c",
+        "size_in_bytes": 2053
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/openmetrics/__pycache__/parser.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "a18a4e96c8678efccffe6d12e88ee6df55a2f9e206c25f3c652a245eb84e6df1",
+        "sha256_in_prefix": "a18a4e96c8678efccffe6d12e88ee6df55a2f9e206c25f3c652a245eb84e6df1",
+        "size_in_bytes": 12493
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/openmetrics/exposition.py",
+        "path_type": "hardlink",
+        "sha256": "11fdc67af7aea233333ab97e4fb706e8c9764d1375c48623a5efe9b91785ae5a",
+        "sha256_in_prefix": "11fdc67af7aea233333ab97e4fb706e8c9764d1375c48623a5efe9b91785ae5a",
+        "size_in_bytes": 2993
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/openmetrics/parser.py",
+        "path_type": "hardlink",
+        "sha256": "73abd071cc96f77317cdcdb640675c7844e0d26fca31e33211b2ab7ce6c6d11f",
+        "sha256_in_prefix": "73abd071cc96f77317cdcdb640675c7844e0d26fca31e33211b2ab7ce6c6d11f",
+        "size_in_bytes": 22125
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/parser.py",
+        "path_type": "hardlink",
+        "sha256": "cee56107c72514fbd0f703848f55e290decda097bc277a5971090d804524b978",
+        "sha256_in_prefix": "cee56107c72514fbd0f703848f55e290decda097bc277a5971090d804524b978",
+        "size_in_bytes": 7434
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/platform_collector.py",
+        "path_type": "hardlink",
+        "sha256": "b7f183da808b3773ea9784e5b5b36a4daa7c6b81ceb5bbc19b4394e7f80f9f7f",
+        "sha256_in_prefix": "b7f183da808b3773ea9784e5b5b36a4daa7c6b81ceb5bbc19b4394e7f80f9f7f",
+        "size_in_bytes": 1879
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/process_collector.py",
+        "path_type": "hardlink",
+        "sha256": "07ccb7e8bd62ab473728596f74d8f517924440b4de735d7a87acb79bd26193dd",
+        "sha256_in_prefix": "07ccb7e8bd62ab473728596f74d8f517924440b4de735d7a87acb79bd26193dd",
+        "size_in_bytes": 3864
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/registry.py",
+        "path_type": "hardlink",
+        "sha256": "f2ca716b419b64da03ff93fe34bc66ebf4d90756b1a5485e81dda3499e110812",
+        "sha256_in_prefix": "f2ca716b419b64da03ff93fe34bc66ebf4d90756b1a5485e81dda3499e110812",
+        "size_in_bytes": 6198
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/samples.py",
+        "path_type": "hardlink",
+        "sha256": "b26222388b00c065c780cffbc60f59a39c9310cda06af62f56d8064e375631c0",
+        "sha256_in_prefix": "b26222388b00c065c780cffbc60f59a39c9310cda06af62f56d8064e375631c0",
+        "size_in_bytes": 1687
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/twisted/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d11c498d848e0b9a7aa3672ee896df53373c45e1d840636ff6928ff94e2eece1",
+        "sha256_in_prefix": "d11c498d848e0b9a7aa3672ee896df53373c45e1d840636ff6928ff94e2eece1",
+        "size_in_bytes": 72
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/twisted/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "b802586b5ae6ee51b5937a6ea3e65995cde02f1966c6e5f8a1bcfbf21e706f3c",
+        "sha256_in_prefix": "b802586b5ae6ee51b5937a6ea3e65995cde02f1966c6e5f8a1bcfbf21e706f3c",
+        "size_in_bytes": 221
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/twisted/__pycache__/_exposition.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "5bb33144064af66c92d0c845f7d889c76cf193b998c3e110e0bcfbb671d7f791",
+        "sha256_in_prefix": "5bb33144064af66c92d0c845f7d889c76cf193b998c3e110e0bcfbb671d7f791",
+        "size_in_bytes": 501
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/twisted/_exposition.py",
+        "path_type": "hardlink",
+        "sha256": "d932f6047e6c5b48ba1fb747928b7d6811fd2ddf88eb46b1e790ee6885a7125a",
+        "sha256_in_prefix": "d932f6047e6c5b48ba1fb747928b7d6811fd2ddf88eb46b1e790ee6885a7125a",
+        "size_in_bytes": 250
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/utils.py",
+        "path_type": "hardlink",
+        "sha256": "cca259696fe1c998104a691a0feae04f997e62c4f7fbe95ed01450eefff1f1e1",
+        "sha256_in_prefix": "cca259696fe1c998104a691a0feae04f997e62c4f7fbe95ed01450eefff1f1e1",
+        "size_in_bytes": 594
+      },
+      {
+        "_path": "Lib/site-packages/prometheus_client/values.py",
+        "path_type": "hardlink",
+        "sha256": "92c2b65aa4bd71f004b5c87ecb94527581c74cdc4a75fb8439d188b94e6ba0e7",
+        "sha256_in_prefix": "92c2b65aa4bd71f004b5c87ecb94527581c74cdc4a75fb8439d188b94e6ba0e7",
+        "size_in_bytes": 5005
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "1f50170d48525c8efedb7fa7891bea5f078af5f7ff6fe91796bbcbcd5657848b",
+  "size": 95983,
+  "subdir": "win-64",
+  "timestamp": 1731961823000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/prometheus_client-0.21.0-py310haa95532_0.conda",
+  "version": "0.21.0"
+}

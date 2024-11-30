@@ -1,0 +1,11 @@
+prefix=C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: libpq
+Description: PostgreSQL libpq library
+URL: https://www.postgresql.org/
+Version: 17.0
+Libs: -L${libdir} -lpq
+Libs.private: -lsecur32 -lwldap32 C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/libcrypto.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/libssl.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/gssapi64.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/krb5_64.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/comerr64.lib -lws2_32 -L${libdir} -lpgport C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/libcrypto.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/libssl.lib -lpgcommon C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/z.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/zstd.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/libcrypto.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/libssl.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/z.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/zstd.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/z.lib C:/Users/gusno/Documents/Proyecto Computacional/Proyecto-Computacional/main/data_analysis/env/Library/lib/zstd.lib
+Cflags: -I${includedir}

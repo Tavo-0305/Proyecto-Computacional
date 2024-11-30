@@ -1,0 +1,300 @@
+{
+  "build": "py310haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [
+    "jupyterlab >=3,<5"
+  ],
+  "depends": [
+    "python >=3.10,<3.11.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\gusno\\miniconda3\\pkgs\\jupyterlab_widgets-3.0.10-py310haa95532_0",
+  "files": [
+    "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/INSTALLER",
+    "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/LICENSE",
+    "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/METADATA",
+    "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/RECORD",
+    "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/REQUESTED",
+    "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/WHEEL",
+    "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/direct_url.json",
+    "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/top_level.txt",
+    "Lib/site-packages/jupyterlab_widgets/__init__.py",
+    "Lib/site-packages/jupyterlab_widgets/__pycache__/__init__.cpython-310.pyc",
+    "Lib/site-packages/jupyterlab_widgets/__pycache__/_version.cpython-310.pyc",
+    "Lib/site-packages/jupyterlab_widgets/_version.py",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/install.json",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/package.json",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/schemas/@jupyter-widgets/jupyterlab-manager/package.json.orig",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/schemas/@jupyter-widgets/jupyterlab-manager/plugin.json",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/113.e4cfda62b59ddbe550d3.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/113.e4cfda62b59ddbe550d3.js.LICENSE.txt",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/134.fe2572ece3b7955c89bb.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/202.0336063976910618ce3f.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/291.cff5ef71b29e18850479.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/291.cff5ef71b29e18850479.js.LICENSE.txt",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/336.0a90bd910629a565bb7e.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/495.3e275af54861cdeb3e75.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/595.998263bfa9875eeeb29b.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/596.6ead6b6190d3ef27b60a.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/61.21f571face17e35076c2.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/644.52a1098a3a5f3e45abff.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/699.e966b1425a7d4e8c3f4e.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/965.5f43c4fc8f77ed09927b.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/remoteEntry.9f387e5e108e458f62c3.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/style.js",
+    "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/third-party-licenses.json",
+    ".nonadmin"
+  ],
+  "fn": "jupyterlab_widgets-3.0.10-py310haa95532_0.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "C:\\Users\\gusno\\miniconda3\\pkgs\\jupyterlab_widgets-3.0.10-py310haa95532_0",
+    "type": 1
+  },
+  "md5": "70444b8860575e6b5ca33cb5dbf5f07a",
+  "name": "jupyterlab_widgets",
+  "package_tarball_full_path": "C:\\Users\\gusno\\miniconda3\\pkgs\\jupyterlab_widgets-3.0.10-py310haa95532_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "19e95347fe7dc0777fa312c22cfcd76fd1a15d46e1cde68f12e6e539ddd6b421",
+        "sha256_in_prefix": "19e95347fe7dc0777fa312c22cfcd76fd1a15d46e1cde68f12e6e539ddd6b421",
+        "size_in_bytes": 13847
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "00a844a576e3c4236cf01ae1503c8c55fe71bfbefca0ae9af6252f307a2a7e57",
+        "sha256_in_prefix": "00a844a576e3c4236cf01ae1503c8c55fe71bfbefca0ae9af6252f307a2a7e57",
+        "size_in_bytes": 4202
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "363cdad923f824763f178881a9f20bd056a0915d9b12055e73002e63db3ffa80",
+        "sha256_in_prefix": "363cdad923f824763f178881a9f20bd056a0915d9b12055e73002e63db3ffa80",
+        "size_in_bytes": 4472
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "c903798389a0e00c9b4639208bef72cb889010589b1909a5cfbf0f8a4e4eafe0",
+        "sha256_in_prefix": "c903798389a0e00c9b4639208bef72cb889010589b1909a5cfbf0f8a4e4eafe0",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "a3937a31c98d6bbdab96af49f361796ec25432253f796815207c4df7d96a00c1",
+        "sha256_in_prefix": "a3937a31c98d6bbdab96af49f361796ec25432253f796815207c4df7d96a00c1",
+        "size_in_bytes": 98
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets-3.0.10.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "d098c011325de88f4b705853ac6c13e7c2726bc8853a3becbe77126240ded493",
+        "sha256_in_prefix": "d098c011325de88f4b705853ac6c13e7c2726bc8853a3becbe77126240ded493",
+        "size_in_bytes": 19
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1fc8ee4b9fed1cc001c84a46ef2b2838c7f30dc3bd9c2f5197e9e4a276110ab1",
+        "sha256_in_prefix": "1fc8ee4b9fed1cc001c84a46ef2b2838c7f30dc3bd9c2f5197e9e4a276110ab1",
+        "size_in_bytes": 599
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "ce1070a9b50300a218ca4a6c9002e8f6085de1715f2523f170a95d329d6eca6c",
+        "sha256_in_prefix": "ce1070a9b50300a218ca4a6c9002e8f6085de1715f2523f170a95d329d6eca6c",
+        "size_in_bytes": 642
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets/__pycache__/_version.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "c20a63ba58b011fc4bf0b583f134c7403e94e6543384bdfcafd1b9f99764340e",
+        "sha256_in_prefix": "c20a63ba58b011fc4bf0b583f134c7403e94e6543384bdfcafd1b9f99764340e",
+        "size_in_bytes": 163
+      },
+      {
+        "_path": "Lib/site-packages/jupyterlab_widgets/_version.py",
+        "path_type": "hardlink",
+        "sha256": "499a71c7f8660ffa0d6d49bafe681216d9e0c3c4c38cd330be63d0d49a2e37bd",
+        "sha256_in_prefix": "499a71c7f8660ffa0d6d49bafe681216d9e0c3c4c38cd330be63d0d49a2e37bd",
+        "size_in_bytes": 125
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/install.json",
+        "path_type": "hardlink",
+        "sha256": "7bae4a70336d75a038699805d662c7221c1aa08ce91fd2e652e786e22258988d",
+        "sha256_in_prefix": "7bae4a70336d75a038699805d662c7221c1aa08ce91fd2e652e786e22258988d",
+        "size_in_bytes": 197
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/package.json",
+        "path_type": "hardlink",
+        "sha256": "91649817a838991eda3b889bf6a73e3038d4f7777b7c300428e8258930126ce2",
+        "sha256_in_prefix": "91649817a838991eda3b889bf6a73e3038d4f7777b7c300428e8258930126ce2",
+        "size_in_bytes": 3533
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/schemas/@jupyter-widgets/jupyterlab-manager/package.json.orig",
+        "path_type": "hardlink",
+        "sha256": "6234a1177a97cd34ee6c0063c30f1da940da77cfdf4d0e07871b9d8454b4a196",
+        "sha256_in_prefix": "6234a1177a97cd34ee6c0063c30f1da940da77cfdf4d0e07871b9d8454b4a196",
+        "size_in_bytes": 3417
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/schemas/@jupyter-widgets/jupyterlab-manager/plugin.json",
+        "path_type": "hardlink",
+        "sha256": "2163419819be1930130abce16b99be2a1d06b7a1f82b31ac9f372e4a2823c760",
+        "sha256_in_prefix": "2163419819be1930130abce16b99be2a1d06b7a1f82b31ac9f372e4a2823c760",
+        "size_in_bytes": 375
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/113.e4cfda62b59ddbe550d3.js",
+        "path_type": "hardlink",
+        "sha256": "f5e64d5328834109a3419b2c2e2cc86d809247c6b1dfecbac3410f6627f30afb",
+        "sha256_in_prefix": "f5e64d5328834109a3419b2c2e2cc86d809247c6b1dfecbac3410f6627f30afb",
+        "size_in_bytes": 181710
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/113.e4cfda62b59ddbe550d3.js.LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "d49fb5cb77f2f622f79fbfee49eec4d3dab51570ad119d054242acd0535b98d7",
+        "sha256_in_prefix": "d49fb5cb77f2f622f79fbfee49eec4d3dab51570ad119d054242acd0535b98d7",
+        "size_in_bytes": 160
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/134.fe2572ece3b7955c89bb.js",
+        "path_type": "hardlink",
+        "sha256": "fe2572ece3b7955c89bb26f647fa167b04de26588dcf65b656bf6ac3489216e0",
+        "sha256_in_prefix": "fe2572ece3b7955c89bb26f647fa167b04de26588dcf65b656bf6ac3489216e0",
+        "size_in_bytes": 85868
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/202.0336063976910618ce3f.js",
+        "path_type": "hardlink",
+        "sha256": "0336063976910618ce3f619121820756a56eeafae6f712088ac1c5317720a250",
+        "sha256_in_prefix": "0336063976910618ce3f619121820756a56eeafae6f712088ac1c5317720a250",
+        "size_in_bytes": 38492
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/291.cff5ef71b29e18850479.js",
+        "path_type": "hardlink",
+        "sha256": "e0174b46b7467c2a21f4f06475bcbed8b28476de16f162132759bcee2a1bf5fc",
+        "sha256_in_prefix": "e0174b46b7467c2a21f4f06475bcbed8b28476de16f162132759bcee2a1bf5fc",
+        "size_in_bytes": 87175
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/291.cff5ef71b29e18850479.js.LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "b396f13a41869ccc527fffdb79ea357e45cd433fdaf81763aff596b2a2a1b72b",
+        "sha256_in_prefix": "b396f13a41869ccc527fffdb79ea357e45cd433fdaf81763aff596b2a2a1b72b",
+        "size_in_bytes": 218
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/336.0a90bd910629a565bb7e.js",
+        "path_type": "hardlink",
+        "sha256": "0a90bd910629a565bb7e95bddef15e1c4a017f155076d2d76a83fa8cfd60b3e3",
+        "sha256_in_prefix": "0a90bd910629a565bb7e95bddef15e1c4a017f155076d2d76a83fa8cfd60b3e3",
+        "size_in_bytes": 11737
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/495.3e275af54861cdeb3e75.js",
+        "path_type": "hardlink",
+        "sha256": "3e275af54861cdeb3e759c34a836951b06946fb3e703a14795e652e9d6aabb6e",
+        "sha256_in_prefix": "3e275af54861cdeb3e759c34a836951b06946fb3e703a14795e652e9d6aabb6e",
+        "size_in_bytes": 111565
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/595.998263bfa9875eeeb29b.js",
+        "path_type": "hardlink",
+        "sha256": "998263bfa9875eeeb29b8d081964947cb9fdf66abf71fdc9687340c9eaa1ad25",
+        "sha256_in_prefix": "998263bfa9875eeeb29b8d081964947cb9fdf66abf71fdc9687340c9eaa1ad25",
+        "size_in_bytes": 24253
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/596.6ead6b6190d3ef27b60a.js",
+        "path_type": "hardlink",
+        "sha256": "6ead6b6190d3ef27b60a2ad9df41274499778315e0f78c64c20a9a81b2994b93",
+        "sha256_in_prefix": "6ead6b6190d3ef27b60a2ad9df41274499778315e0f78c64c20a9a81b2994b93",
+        "size_in_bytes": 583
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/61.21f571face17e35076c2.js",
+        "path_type": "hardlink",
+        "sha256": "21f571face17e35076c20654e3204ab75578f9b288c58ca1eb1ceb24d1899d48",
+        "sha256_in_prefix": "21f571face17e35076c20654e3204ab75578f9b288c58ca1eb1ceb24d1899d48",
+        "size_in_bytes": 187
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/644.52a1098a3a5f3e45abff.js",
+        "path_type": "hardlink",
+        "sha256": "52a1098a3a5f3e45abffc93fcbdc2c3b6eb50e15bcd4714a991e3ee89bc61310",
+        "sha256_in_prefix": "52a1098a3a5f3e45abffc93fcbdc2c3b6eb50e15bcd4714a991e3ee89bc61310",
+        "size_in_bytes": 60054
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/699.e966b1425a7d4e8c3f4e.js",
+        "path_type": "hardlink",
+        "sha256": "e966b1425a7d4e8c3f4edee3d263961685d0932b80ee6423d9d5cec53947efeb",
+        "sha256_in_prefix": "e966b1425a7d4e8c3f4edee3d263961685d0932b80ee6423d9d5cec53947efeb",
+        "size_in_bytes": 33147
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/965.5f43c4fc8f77ed09927b.js",
+        "path_type": "hardlink",
+        "sha256": "5f43c4fc8f77ed09927b164810660d5721afef070fd62a0e6535a2d518462e89",
+        "sha256_in_prefix": "5f43c4fc8f77ed09927b164810660d5721afef070fd62a0e6535a2d518462e89",
+        "size_in_bytes": 583
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/remoteEntry.9f387e5e108e458f62c3.js",
+        "path_type": "hardlink",
+        "sha256": "9f387e5e108e458f62c3653111af66a97edfd7b79af9590f7e6b1535a2878bb5",
+        "sha256_in_prefix": "9f387e5e108e458f62c3653111af66a97edfd7b79af9590f7e6b1535a2878bb5",
+        "size_in_bytes": 10629
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/style.js",
+        "path_type": "hardlink",
+        "sha256": "f8242dd194cf6824efad188b7339f17e501b7ef20a94e5738cea2cfa6b9a5d0f",
+        "sha256_in_prefix": "f8242dd194cf6824efad188b7339f17e501b7ef20a94e5738cea2cfa6b9a5d0f",
+        "size_in_bytes": 118
+      },
+      {
+        "_path": "share/jupyter/labextensions/@jupyter-widgets/jupyterlab-manager/static/third-party-licenses.json",
+        "path_type": "hardlink",
+        "sha256": "411be2c367fd648c142d6cbd522eae87689784c20a3b7106c079db0f982e3568",
+        "sha256_in_prefix": "411be2c367fd648c142d6cbd522eae87689784c20a3b7106c079db0f982e3568",
+        "size_in_bytes": 40924
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "4886c158b819ca9a8aa5d7fa2b20df425438edb92f291250bcfb4a8ab7b51add",
+  "size": 200371,
+  "subdir": "win-64",
+  "timestamp": 1709323574000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/jupyterlab_widgets-3.0.10-py310haa95532_0.conda",
+  "version": "3.0.10"
+}

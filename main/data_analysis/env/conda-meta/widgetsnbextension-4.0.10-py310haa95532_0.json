@@ -1,0 +1,186 @@
+{
+  "build": "py310haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.10,<3.11.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\gusno\\miniconda3\\pkgs\\widgetsnbextension-4.0.10-py310haa95532_0",
+  "files": [
+    "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/INSTALLER",
+    "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/LICENSE",
+    "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/METADATA",
+    "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/RECORD",
+    "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/REQUESTED",
+    "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/WHEEL",
+    "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/direct_url.json",
+    "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/top_level.txt",
+    "Lib/site-packages/widgetsnbextension/__init__.py",
+    "Lib/site-packages/widgetsnbextension/__pycache__/__init__.cpython-310.pyc",
+    "Lib/site-packages/widgetsnbextension/__pycache__/_version.cpython-310.pyc",
+    "Lib/site-packages/widgetsnbextension/_version.py",
+    "Lib/site-packages/widgetsnbextension/static/extension.js",
+    "Lib/site-packages/widgetsnbextension/static/extension.js.LICENSE.txt",
+    "Lib/site-packages/widgetsnbextension/static/extension.js.map",
+    "etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json",
+    "share/jupyter/nbextensions/jupyter-js-widgets/extension.js",
+    "share/jupyter/nbextensions/jupyter-js-widgets/extension.js.LICENSE.txt",
+    "share/jupyter/nbextensions/jupyter-js-widgets/extension.js.map",
+    ".nonadmin"
+  ],
+  "fn": "widgetsnbextension-4.0.10-py310haa95532_0.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "C:\\Users\\gusno\\miniconda3\\pkgs\\widgetsnbextension-4.0.10-py310haa95532_0",
+    "type": 1
+  },
+  "md5": "9b945036cae8e05a9511f5f66936dd27",
+  "name": "widgetsnbextension",
+  "package_tarball_full_path": "C:\\Users\\gusno\\miniconda3\\pkgs\\widgetsnbextension-4.0.10-py310haa95532_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e5ac2be30b2bcefe330ee9e5ad7fe5b0d1156fecb3555fcaaa908a8d29f9fded",
+        "sha256_in_prefix": "e5ac2be30b2bcefe330ee9e5ad7fe5b0d1156fecb3555fcaaa908a8d29f9fded",
+        "size_in_bytes": 1513
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "158010f8234f909dcf170078593e56a9b9bb898557fcf853ff256ced38dc7aec",
+        "sha256_in_prefix": "158010f8234f909dcf170078593e56a9b9bb898557fcf853ff256ced38dc7aec",
+        "size_in_bytes": 1628
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "90d919382b4c5af4960a04737c5ca135f249cd228b2e150a6477b75133642eaf",
+        "sha256_in_prefix": "90d919382b4c5af4960a04737c5ca135f249cd228b2e150a6477b75133642eaf",
+        "size_in_bytes": 1863
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "c903798389a0e00c9b4639208bef72cb889010589b1909a5cfbf0f8a4e4eafe0",
+        "sha256_in_prefix": "c903798389a0e00c9b4639208bef72cb889010589b1909a5cfbf0f8a4e4eafe0",
+        "size_in_bytes": 92
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "ec01f0c28d8ac291d0282393b4baa82a3ed93744179f7160a9cd17b13aa7621a",
+        "sha256_in_prefix": "ec01f0c28d8ac291d0282393b4baa82a3ed93744179f7160a9cd17b13aa7621a",
+        "size_in_bytes": 98
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension-4.0.10.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f2651b7e38dd42b952344dd68cbcfed4112546878cf3ee21cd46641e56f156fb",
+        "sha256_in_prefix": "f2651b7e38dd42b952344dd68cbcfed4112546878cf3ee21cd46641e56f156fb",
+        "size_in_bytes": 19
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "231e7c8b0eb14f79a2b0dd8fb9d0f19c6788805c4130f6d40212b754f6a640d6",
+        "sha256_in_prefix": "231e7c8b0eb14f79a2b0dd8fb9d0f19c6788805c4130f6d40212b754f6a640d6",
+        "size_in_bytes": 765
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "f985cae2901113e555da76041ff0c8b4222fee43c7b80aa52884d17d3565fe15",
+        "sha256_in_prefix": "f985cae2901113e555da76041ff0c8b4222fee43c7b80aa52884d17d3565fe15",
+        "size_in_bytes": 985
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension/__pycache__/_version.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "702ed965efe42b124e03c8b5103f89af777fa62b1255da5873c05c659b689376",
+        "sha256_in_prefix": "702ed965efe42b124e03c8b5103f89af777fa62b1255da5873c05c659b689376",
+        "size_in_bytes": 163
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension/_version.py",
+        "path_type": "hardlink",
+        "sha256": "2f7e714e5b75c624e6903b0f9fb1f5246567a2f3fa7367f82d45e8dd9a3551f5",
+        "sha256_in_prefix": "2f7e714e5b75c624e6903b0f9fb1f5246567a2f3fa7367f82d45e8dd9a3551f5",
+        "size_in_bytes": 125
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension/static/extension.js",
+        "path_type": "hardlink",
+        "sha256": "27ee4cf82833990cd88402c8d293232981a32085db14bdb06bf6e1392ba3652d",
+        "sha256_in_prefix": "27ee4cf82833990cd88402c8d293232981a32085db14bdb06bf6e1392ba3652d",
+        "size_in_bytes": 993839
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension/static/extension.js.LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "43a2029ca57e11b3b3b03d9c583734c8d3fdcab2b2105dc5bb5429e9bb622f36",
+        "sha256_in_prefix": "43a2029ca57e11b3b3b03d9c583734c8d3fdcab2b2105dc5bb5429e9bb622f36",
+        "size_in_bytes": 1188
+      },
+      {
+        "_path": "Lib/site-packages/widgetsnbextension/static/extension.js.map",
+        "path_type": "hardlink",
+        "sha256": "380bac93b67c18e1dc3e2704a8c74d86d09077df205a75d9a3ae514f6342fa41",
+        "sha256_in_prefix": "380bac93b67c18e1dc3e2704a8c74d86d09077df205a75d9a3ae514f6342fa41",
+        "size_in_bytes": 4023680
+      },
+      {
+        "_path": "etc/jupyter/nbconfig/notebook.d/widgetsnbextension.json",
+        "path_type": "hardlink",
+        "sha256": "a855f3099fcbb8c7f885bf5cff254433b834b49b67699509fd733ecef685ca28",
+        "sha256_in_prefix": "a855f3099fcbb8c7f885bf5cff254433b834b49b67699509fd733ecef685ca28",
+        "size_in_bytes": 72
+      },
+      {
+        "_path": "share/jupyter/nbextensions/jupyter-js-widgets/extension.js",
+        "path_type": "hardlink",
+        "sha256": "27ee4cf82833990cd88402c8d293232981a32085db14bdb06bf6e1392ba3652d",
+        "sha256_in_prefix": "27ee4cf82833990cd88402c8d293232981a32085db14bdb06bf6e1392ba3652d",
+        "size_in_bytes": 993839
+      },
+      {
+        "_path": "share/jupyter/nbextensions/jupyter-js-widgets/extension.js.LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "43a2029ca57e11b3b3b03d9c583734c8d3fdcab2b2105dc5bb5429e9bb622f36",
+        "sha256_in_prefix": "43a2029ca57e11b3b3b03d9c583734c8d3fdcab2b2105dc5bb5429e9bb622f36",
+        "size_in_bytes": 1188
+      },
+      {
+        "_path": "share/jupyter/nbextensions/jupyter-js-widgets/extension.js.map",
+        "path_type": "hardlink",
+        "sha256": "380bac93b67c18e1dc3e2704a8c74d86d09077df205a75d9a3ae514f6342fa41",
+        "sha256_in_prefix": "380bac93b67c18e1dc3e2704a8c74d86d09077df205a75d9a3ae514f6342fa41",
+        "size_in_bytes": 4023680
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "c5c5a5f844c715ca78721742c68c4ad7929eb103163a7d3c36297641cb849677",
+  "size": 971529,
+  "subdir": "win-64",
+  "timestamp": 1709323320000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/widgetsnbextension-4.0.10-py310haa95532_0.conda",
+  "version": "4.0.10"
+}

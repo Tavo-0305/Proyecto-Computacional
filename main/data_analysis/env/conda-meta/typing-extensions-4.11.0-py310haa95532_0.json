@@ -1,0 +1,34 @@
+{
+  "build": "py310haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.10,<3.11.0a0",
+    "typing_extensions 4.11.0 py310haa95532_0"
+  ],
+  "extracted_package_dir": "C:\\Users\\gusno\\miniconda3\\pkgs\\typing-extensions-4.11.0-py310haa95532_0",
+  "files": [
+    ".nonadmin"
+  ],
+  "fn": "typing-extensions-4.11.0-py310haa95532_0.conda",
+  "license": "PSF-2.0",
+  "link": {
+    "source": "C:\\Users\\gusno\\miniconda3\\pkgs\\typing-extensions-4.11.0-py310haa95532_0",
+    "type": 1
+  },
+  "md5": "b73f0c2b8397c5dbfede3668a11833d3",
+  "name": "typing-extensions",
+  "package_tarball_full_path": "C:\\Users\\gusno\\miniconda3\\pkgs\\typing-extensions-4.11.0-py310haa95532_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "857bc91445727d6dc3bb5d63ce3eb98919254eedd0e16c09d63a08b41e8f687f",
+  "size": 9991,
+  "subdir": "win-64",
+  "timestamp": 1715269070000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/typing-extensions-4.11.0-py310haa95532_0.conda",
+  "version": "4.11.0"
+}
