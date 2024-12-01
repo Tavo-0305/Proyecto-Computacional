@@ -13,5 +13,6 @@ nav:
   - Introducción: index.md
   - Tutorial: tutorial.md
   - Análisis de datos: analisis_datos.md
-  - Documentación: documentation.md
+  - Documentación de Clases: classes.md
+  - Documentación del Main: main.md
   
