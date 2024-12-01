@@ -63,7 +63,7 @@ for i in range(cantidadDiscos):
     discos[i] = Disco(posiciones[i][0], posiciones[i][1], color, radio)
 
 # Configuración del escenario de simulación
-simulacion = Escenario(discos, 0.005)  # Paso de tiempo de 0.005 unidades
+simulacion = Escenario(discos, 0.01)  # Paso de tiempo de 0.005 unidades
 
 # Ejecución de la simulación
 simulacion.runSimulation()
