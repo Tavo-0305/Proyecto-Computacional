@@ -21,7 +21,7 @@ espacioHorizontal = 1.0  # Ancho del contenedor
 espacioVertical = 1.0    # Alto del contenedor
 cantidadDiscos = 50      # Número de discos en la simulación
 
-# Configuración de la cuadrícula para posicionar los discos
+# Define el tamaño de la cuadrícula para posicionar los discos
 largoMatriz = 1
 while True:
     if largoMatriz * largoMatriz < cantidadDiscos:
@@ -29,9 +29,12 @@ while True:
     else:
         break
 
+# Define las distancias verticales y horizontales de separación entre los discos
 distanciaHorizontal = espacioHorizontal / (largoMatriz + 1)
 distanciaVertical = espacioVertical / (largoMatriz + 1)
-posiciones = np.zeros([largoMatriz * largoMatriz, 2])  # Inicializa posiciones en una cuadrícula
+
+# Inicializa la matriz de posiciones y asigna la posición inicial
+posiciones = np.zeros([largoMatriz * largoMatriz, 2])
 posiciones[0] = [distanciaHorizontal, distanciaVertical]
 
 # Calcula las posiciones iniciales distribuidas uniformemente en la cuadrícula
@@ -47,23 +50,27 @@ for i in range(1, largoMatriz * largoMatriz):
 indicesAleatorios = np.random.choice(largoMatriz * largoMatriz, cantidadDiscos, replace=False)
 posiciones = posiciones[indicesAleatorios]
 
-# Crea los objetos `Disco` con colores y radios asignados aleatoriamente
-discos = [0] * cantidadDiscos
+# Crea los objetos `Disco` con radios asignados aleatoriamente
+discos = [0] * cantidadDiscos # Lista vacía donde se almacenan los objetos 'Disco'
 for i in range(cantidadDiscos):
-    if i % 4 == 0:
-        color = 'blue'
-    elif i % 4 == 1:
-        color = 'red'
-    elif i % 4 == 2:
-        color = 'green'
-    else:
-        color = 'orange'
 
-    radio = np.random.uniform(0.01, 0.05)  # Radio aleatorio entre 0.01 y 0.05
+    # Define los colores de los discos en un orden secuencial
+    if i % 5 == 0:
+        color = '#0033ff' # Color azul
+    elif i % 5 == 1:
+        color = '#cc0000' # Color rojo
+    elif i % 5 == 2:
+        color = '#009933' # Color verde
+    elif i % 5 == 3:
+        color = '#ffcc33' # Color amarillo
+    else:
+        color = '#990099' # Color morado
+
+    radio = np.random.uniform(0.04, 0.05)  # Radio aleatorio entre 0.01 y 0.05
     discos[i] = Disco(posiciones[i][0], posiciones[i][1], color, radio)
 
 # Configuración del escenario de simulación
-simulacion = Escenario(discos, 0.01)  # Paso de tiempo de 0.005 unidades
+simulacion = Escenario(discos, 0.01,espacioHorizontal,espacioVertical,timerVisible=True)  # Paso de tiempo de 0.005 unidades
 
 # Ejecución de la simulación
 simulacion.runSimulation()
