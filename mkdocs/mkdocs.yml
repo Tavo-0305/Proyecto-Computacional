@@ -13,5 +13,6 @@ nav:
   - Introducción: index.md
   - Análisis de datos: analisis_datos.md
   - Documentación de Clases: classes.md
-  - Documentación del Main: main.md
-  
+  - Documentación para varios discos: main.md
+  - Documentación para 4 discos: four_disk.md
+  - Resultados: resultados.md

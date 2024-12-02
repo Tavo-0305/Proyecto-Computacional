@@ -65,3 +65,5 @@ Finalmente configuramos el escenario de simulación con un paso de tiempo de 0.0
 simulacion = Escenario(discos, 0.005)
 simulacion.runSimulation()
 ```
+![Simulación de muchos discos de radios variados entre 0.1 a 0.5](imagenes/many.gif)
+
