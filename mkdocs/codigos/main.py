@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Simulación simplificada de colisiones elásticas entre 4 discos en un espacio cerrado.
+Simulación simplificada de colisiones elásticas entre 4 discos de un mismo radio, en un espacio cerrado.
 
 Este script configura y ejecuta una simulación de colisiones elásticas utilizando
 los objetos `Disco` y `Escenario` definidos en el módulo `classes`. Las posiciones
