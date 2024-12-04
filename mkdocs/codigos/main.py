@@ -38,7 +38,7 @@ discos = [
 ]
 
 # Configuración del escenario de simulación
-simulacion = Escenario(discos, 0.01)
+simulacion = Escenario(discos, 0.01, espacioHorizontal, espacioVertical)
 
 # Ejecución de la simulación
 simulacion.runSimulation()

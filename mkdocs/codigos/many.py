@@ -67,7 +67,8 @@ for i in range(cantidadDiscos):
         color = '#990099' # Color morado
 
     radio = 0.01
-    #radio = np.random.uniform(0.04, 0.05)  # Radio aleatorio entre 0.01 y 0.05
+    # Si se necesitan discos de distintos radios se puede utilizar la siguiente linea
+    #radio = np.random.uniform(0.01, 0.05)  # Radio aleatorio entre 0.01 y 0.05
     discos[i] = Disco(posiciones[i][0], posiciones[i][1], color, radio)
 
 # Configuración del escenario de simulación

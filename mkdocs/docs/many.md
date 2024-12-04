@@ -22,7 +22,7 @@ espacioHorizontal = 1.0
 espacioVertical = 1.0    
 cantidadDiscos = 50      
 ```
-También se define el tamaño de la cuadrícula para posicionar los discos, de tal manera que si el cuadrado del largo de matriz sea menos que la cantidad de discos, se procede a sumarle una unidad al largo de matriz.
+También se define el tamaño de la cuadrícula para posicionar los discos, de tal manera que se pueda crear una matriz cuadrada que pueda almacenar una cantidad igual o mayor a la cantidad de discos.
 ```py
 largoMatriz = 1
 while True:
@@ -31,7 +31,7 @@ while True:
     else:
         break
 ```
-Luego se definen las distancias verticales y horizontalesde separación entre los discos, de la siguiente manera:
+Luego se definen las distancias verticales y horizontales de separación entre los discos, de la siguiente manera:
 ```py
 distanciaHorizontal = espacioHorizontal / (largoMatriz + 1)
 distanciaVertical = espacioVertical / (largoMatriz + 1)
@@ -56,7 +56,7 @@ Después se seleccionan de manera aleatoria las posiciones iniciales de los disc
 indicesAleatorios = np.random.choice(largoMatriz * largoMatriz, cantidadDiscos, replace=False)
 posiciones = posiciones[indicesAleatorios]
 ```
-Una vez teniendo todo lo anterior listo, se procede a crear los objetos `Disco` con radios de personalizados, además se definen los colores de forma secuencial:
+Una vez teniendo todo lo anterior listo, se procede a crear los objetos `Disco` con radios de personalizados. Además, se definen los colores de forma secuencial, utilizando valores definidos de manera hexadecimal:
 ```py
 discos = [0] * cantidadDiscos
 for i in range(cantidadDiscos):

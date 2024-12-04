@@ -154,7 +154,7 @@ class Escenario:
         Configura la visualización gráfica del escenario con `matplotlib`.
 
         Returns:
-            list: Elementos de la figura y ejes para la animación.
+            (list): Elementos de la figura y ejes para la animación.
         """
         # Crea el espacio de visualización de la simulación
         fig, ax = plt.subplots(figsize=(8, 8))
@@ -194,7 +194,7 @@ class Escenario:
             frame (int): Número de cuadro actual en la simulación.
 
         Returns:
-            list: Elementos gráficos actualizados para el cuadro.
+            (list): Elementos gráficos actualizados para el cuadro.
         """
         datos = f"{self.step * frame}"
 
@@ -227,7 +227,7 @@ class Escenario:
         Inicializa el archivo CSV para guardar los datos de la simulación.
 
         Returns:
-            str: Nombre del archivo CSV creado.
+            (str): Nombre del archivo CSV creado.
         """
         # Nombre del archivo donde se almacena la información de la simulación
         fileName = "Datos_Simulacion.csv"
