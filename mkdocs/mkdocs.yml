@@ -8,10 +8,18 @@ theme:
 plugins:
   - mkdocstrings
 
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
 
 nav:
   - Introducción: index.md
   - Documentación de Clases: classes.md
-  - Documentación para 4 discos: four_disk.md
-  - Documentación para varios discos: many.md
+  - Ejemplo para 4 discos: four_disk.md
+  - Ejemplo para varios discos: many.md
   - Resultados: resultados.md

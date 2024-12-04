@@ -1,18 +1,18 @@
-Simulación de colisiones elásticas entre 4 discos de mismo radio, en un espacio cerrado.
+# Simulación de colisiones elásticas entre 4 discos de mismo radio, en un espacio cerrado.
 
 Este script configura y ejecuta una simulación de colisiones elásticas utilizando los objetos `Disco` y `Escenario` definidos en el módulo `classes`. Se generan aleatoriamente posiciones iniciales para un conjunto de cuatro discos y se les asignan colores variados. La simulación se ejecuta y se visualiza en tiempo real.
-Para realizar esto tenemos como dependencias las siguientes clases:
+Primero va a ser necesario importar las herramientas necesarias:
 
 -`numpy`
 
 -`classes` (debe incluir las clases `Disco` y `Escenario`).
 
-Por lo tanto, comenzamos llamando cada clase:
+De esta manera, primero es necesario:
 ```py
 import numpy as np
 from classes import Disco, Escenario
 ```
-Seguidamente, definimos el tamaño del espacio de simulación y los parámetros iniciales, siento estos 4 dicsos y con radio de 0.10:
+Seguidamente, definimos el tamaño del espacio de simulación y los parámetros iniciales, siendo estos 4 discos de radio de 0.1:
 
 ```py
 espacioHorizontal = 1.0  
@@ -42,6 +42,6 @@ Finalmente, configuramos el espacio de simulación y ejecutamos la simulación:
 simulacion = Escenario(discos, 0.01)
 simulacion.runSimulation(
 ```
-A continuación se mostrará la simulación resultante para 4 discos de radio 0.10 unidades:
+### A continuación se mostrará la simulación resultante para 4 discos de radio=0.1 unidades:
 
 ![Simulación de 4 discos](imagenes/main.gif)

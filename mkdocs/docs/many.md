@@ -1,4 +1,4 @@
-Simulación de colisiones elásticas entre múltiples discos en un espacio cerrado.
+# Simulación de colisiones elásticas entre múltiples discos en un espacio cerrado.
 
 Este script configura y ejecuta una simulación de colisiones elásticas utilizando
 los objetos `Disco` y `Escenario` definidos en el módulo `classes`. Se generan 
@@ -16,7 +16,7 @@ Para realizar esta simulación iniciamos llamando las bibliotecas a utilizar, en
 import numpy as np
 from classes import Disco, Escenario
 ```
-Seguidamente, empezamos con el código como tal, definiendo el espacio de simulación y los parámetros iniciales, en nuestro caso, decidimos definir un tamaño 1x1 y 50 discos.
+Seguidamente, empezamos con el código como tal, definiendo el espacio de simulación y los parámetros iniciales, en nuestro caso, ahora usamos 50 discos.
 ```py
 espacioHorizontal = 1.0  
 espacioVertical = 1.0    
@@ -56,7 +56,7 @@ Después se seleccionan de manera aleatoria las posiciones iniciales de los disc
 indicesAleatorios = np.random.choice(largoMatriz * largoMatriz, cantidadDiscos, replace=False)
 posiciones = posiciones[indicesAleatorios]
 ```
-Una vez teniendo todo lo anterior listo, se procede a crear los objetos `Disco` con radios específicamente, además se definen los colores de forma secuencial:
+Una vez teniendo todo lo anterior listo, se procede a crear los objetos `Disco` con radios de personalizados, además se definen los colores de forma secuencial:
 ```py
 discos = [0] * cantidadDiscos
 for i in range(cantidadDiscos):
@@ -81,12 +81,12 @@ Finalmente Se configura el escenario de simulación, con un paso de tiempo de 0.
 simulacion = Escenario(discos, 0.01,espacioHorizontal,espacioVertical,timerVisible=True)
 simulacion.runSimulation()
 ```
-A continuación, se mostrarán dos simulaciones de este código, una con discos de radio de 0.5 unidades y la otra con discos con radio de 0.01 unidades.
+A continuación, se mostrarán dos simulaciones de este código, una con discos de radio de 0.05 unidades y la otra con discos con radio de 0.01 unidades.
 
-50 discos de radio 0.5 unidades:
+### 50 discos de radio = 0.05 unidades:
 ![Simulación de muchos discos de radios variados entre 0.1 a 0.5](imagenes/bigR.gif)
 
 
-50 discos de radio 0.01 unidades:
+### 50 discos de radio= 0.01 unidades:
 ![Simulación de muchos discos de radios variados entre 0.1 a 0.5](imagenes/smallR.gif)
 

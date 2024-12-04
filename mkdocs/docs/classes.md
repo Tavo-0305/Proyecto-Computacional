@@ -1,4 +1,2 @@
-## Reference
-
 ::: codigos.classes
 
