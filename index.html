@@ -1,0 +1,486 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+        <link rel="next" href="classes/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+    
+    
+      
+        <title>Dinámica Molecular</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dinamica-molecular-en-dos-dimensiones-discos-solidos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Dinámica Molecular" class="md-header__button md-logo" aria-label="Dinámica Molecular" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dinámica Molecular
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introducción
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Dinámica Molecular" class="md-nav__button md-logo" aria-label="Dinámica Molecular" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Dinámica Molecular
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Introducción
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cinematica-de-los-discos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cinemática de los discos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colisiones-con-las-paredes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colisiones con las paredes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colisiones-entre-discos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colisiones entre discos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#condiciones-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Condiciones iniciales
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Documentación de Clases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="four_disk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ejemplo para 4 discos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="many/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ejemplo para varios discos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resultados/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resultados
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cinematica-de-los-discos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cinemática de los discos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colisiones-con-las-paredes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colisiones con las paredes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#colisiones-entre-discos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Colisiones entre discos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#condiciones-iniciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Condiciones iniciales
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="dinamica-molecular-en-dos-dimensiones-discos-solidos">Dinámica Molecular en dos Dimensiones: Discos Sólidos.</h1>
+<p>La dinámica molecular es un tipo de simulación computacional, que tiene el objetivo de analizar el comportamiento de un sistema ya sea físico, químico o biológico; a través del tiempo.</p>
+<p>La dinámica molecular es de gran importancia en el mundo de las ciencias, ya que permite estudiar aquellas moléculas que no se pueden observar por medio de microscopía electrónica o que presentan tiempos de equilibrios en escalas tan pequeñas como de orden de nanosegundos, que no se pueden medir en laboratorio o que simplemente su dinámica puede ser más clara por medio de métodos númericos y herramientas computacionales. </p>
+<p><img alt="Dinámica Molecular" src="imagenes/dinamicamolecular.jpg" /></p>
+<p>El objetivo de este proyecto es realizar una simulación de dos dimensiones con 4 discos sólidos, que se muevan sin fricción ni momento angular dentro de una caja de longitud unitaria, a estos discos se les puede asociar una energía cinética inicial aleatoria, resultando en una distribución de velocidades aleatorias para el sistema.</p>
+<h2 id="cinematica-de-los-discos">Cinemática de los discos</h2>
+<p>La posición de un disco en dos dimensiones, <span class="arithmatex">\(\mathbf{r} = (x, y)\)</span>, evoluciona en el tiempo según su velocidad:</p>
+<div class="arithmatex">\[\begin{align}
+\mathbf{r}(t + \Delta t) = \mathbf{r}(t) + \mathbf{v}(t) \Delta t,
+\end{align}\]</div>
+<p>donde: <span class="arithmatex">\(\mathbf{r}(t)\)</span> es la posición del disco en el tiempo <span class="arithmatex">\(t\)</span>, <span class="arithmatex">\(\mathbf{v}(t)\)</span> es la velocidad del disco en el tiempo <span class="arithmatex">\(t\)</span>, y <span class="arithmatex">\(\Delta t\)</span> es el paso de tiempo en la simulación.</p>
+<h2 id="colisiones-con-las-paredes">Colisiones con las paredes</h2>
+<p>Para detectar colisiones con las paredes del contenedor, se verifica si la posición del disco excede los límites del espacio definido. Al ocurrir una colisión, la componente de la velocidad perpendicular a la pared cambia de signo, mientras que la componente paralela permanece sin cambios. Matemáticamente:</p>
+<div class="arithmatex">\[\begin{align}
+v_x' = -v_x, \quad v_y' = v_y \quad &amp;\text{(para colisiones con paredes verticales)}, \\
+v_x' = v_x, \quad v_y' = -v_y \quad &amp;\text{(para colisiones con paredes horizontales)}.
+\end{align}\]</div>
+<h2 id="colisiones-entre-discos">Colisiones entre discos</h2>
+<p>Cuando dos discos colisionan, se aplican las leyes de conservación de la cantidad de movimiento lineal y la energía cinética, ya que las colisiones son perfectamente elásticas. Sean <span class="arithmatex">\(\mathbf{v}_1\)</span> y <span class="arithmatex">\(\mathbf{v}_2\)</span> las velocidades iniciales de los discos, y <span class="arithmatex">\(\mathbf{v}_1'\)</span> y <span class="arithmatex">\(\mathbf{v}_2'\)</span> las velocidades finales. Las nuevas velocidades después de la colisión se obtienen utilizando las siguientes ecuaciones:</p>
+<div class="arithmatex">\[\begin{align}
+\mathbf{v}_1' &amp;= \mathbf{v}_1 - \frac{2m_2}{m_1 + m_2} \frac{\langle \mathbf{v}_1 - \mathbf{v}_2, \mathbf{r}_1 - \mathbf{r}_2 \rangle}{\|\mathbf{r}_1 - \mathbf{r}_2\|^2} (\mathbf{r}_1 - \mathbf{r}_2), \\
+\mathbf{v}_2' &amp;= \mathbf{v}_2 - \frac{2m_1}{m_1 + m_2} \frac{\langle \mathbf{v}_2 - \mathbf{v}_1, \mathbf{r}_2 - \mathbf{r}_1 \rangle}{\|\mathbf{r}_2 - \mathbf{r}_1\|^2} (\mathbf{r}_2 - \mathbf{r}_1),
+\end{align}\]</div>
+<p>donde: <span class="arithmatex">\(\mathbf{r}_1\)</span> y <span class="arithmatex">\(\mathbf{r}_2\)</span> son las posiciones de los discos y <span class="arithmatex">\(m_1\)</span> y <span class="arithmatex">\(m_2\)</span> son sus masas,</p>
+<h2 id="condiciones-iniciales">Condiciones iniciales</h2>
+<p>Para iniciar la simulación, se generan posiciones y velocidades aleatorias para los discos, garantizando que no estén superpuestos. Las posiciones <span class="arithmatex">\(\mathbf{r}_i\)</span> y velocidades <span class="arithmatex">\(\mathbf{v}_i\)</span> iniciales se calculan dentro del rango definido por las dimensiones del contenedor y las restricciones de colisión.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
