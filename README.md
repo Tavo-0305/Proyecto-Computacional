@@ -9,3 +9,5 @@ Proyecto de Física Computacional - II Semestre 2024  - UCR
  - Mavi Calderón Badilla - C11348
 
 Utilizando las ecuaciones de cinematica, se elabora un programa en dos dimensiones con 4 discos solidos de radio r que se mueven sin friccion ni momento angular dentro de una caja de longitud unitaria. A estos discos se les asocia una energía cinetica inicial aleatoria, resultando así en una distribucion de velocidades aleatoria para el sistema.
+
+La documentación del proyecto puede ser consultada en: https://tavo-0305.github.io/Proyecto-Computacional/
